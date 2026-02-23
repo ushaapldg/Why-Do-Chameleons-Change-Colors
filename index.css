@@ -1,0 +1,425 @@
+@font-face {
+    font-family: Coral Pixels;
+    src: url(fonts/Coral_Pixels/CoralPixels-Regular.ttf);
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url(fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Prosto One;
+    src: url(fonts/Prosto_One/ProstoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kodchasan;
+    src: url(fonts/Kodchasan/Kodchasan-Regular.ttf);
+}
+
+@font-face {
+    font-family: M PLUS;
+    src: url(fonts/M_PLUS_1p/MPLUS1p-Light.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+
+    color: white;
+    font-family: Kodchasan;
+}
+
+h2 {
+    margin: 0;
+
+    font-family: M PLUS;
+}
+
+p {
+    margin: 0;
+
+    color: white;
+    font-family: M PLUS;
+    font-size: 1.15em;
+}
+
+.header {
+    background-color: rgb(249, 249, 250);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+    height: 90px;
+
+    box-shadow: 0 7px 10px rgba(0,0,0,0.15);
+}
+
+.searchbar {
+    border: 1px solid lightslategray;
+    border-radius: 25px;
+
+    padding: 10px 15px;
+    margin-right: 20px;
+
+    width: 500px;
+
+    font-family: Coral Pixels;
+    font-size: 1.4em;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 25px;
+
+    height: 55px;
+    width: 80px;
+}
+
+.search-button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.search-button-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+.banner {
+    
+    background-image: url(images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    background-color: black;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    padding: 30px 50px;
+
+    min-height: 650px;
+}
+
+.banner-content {
+    width: 800px;
+}
+
+.banner-title {
+    margin-bottom: 20px;
+
+    font-size: 5em;
+}
+
+.banner-subheader {
+    color: white;
+}
+
+
+
+.dictionary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+    height: 650px;
+}
+
+.dictionary-background {
+    position: absolute;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dictionary-background-content {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dictionary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.entry-word-container {
+    max-width: 1000px;
+    max-height: 350px;
+}
+
+.entry-word {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.definition {
+    margin-bottom: 30px;
+
+    color: white;
+    font-size: 2em;
+}
+
+.dictionary-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dictionary-button {
+    border: 3px black solid;
+
+    margin: 0 7px;
+    padding: 20px 20px;
+
+    font-family: M PLUS;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.dictionary-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.pigment-chromatophores {
+    background-color: black;
+
+    padding: 50px 50px;
+}
+
+.pigment-chromatophores h1 {
+    text-align: center;
+    font-size: 3em;
+
+    margin-bottom: 40px;
+}
+
+.pigment-explanation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pigment-description {
+    width: 650px;
+}
+
+
+.skin-image-container {
+    width: 750px;
+    height: 400px;
+}
+
+.skin-image {
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.pigment-chromatophores-transition {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.iridophores-transition {
+    text-align: center;
+}
+
+
+.iridophores-explained h1 {
+    margin-bottom: 40px;
+
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.iridophores-explained {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 120px;
+}
+
+.iridophores-explained-text {
+    text-align: center;
+}
+
+.iridophores-explained-text p {
+    color: black;
+}
+
+.iridophores-explained-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 20px 130px;
+}
+
+.iridophores-explained-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.iridophores-image-container-relaxed {
+    background-color: rgb(159, 191, 255);
+
+    padding: 7px;
+    
+
+    height: 300px;
+    width: 300px;
+}
+
+.iridophores-image-container-excited {
+    background-color: rgb(255, 237, 159);
+
+    padding: 7px;
+
+    height: 300px;
+    width: 300px;
+}
+
+.iridophores-explained-image-placeholder p {
+    color: black;
+}
+
+.iridophores-image-description-container {
+    margin-top: 10px;
+    
+    max-width: 450px;
+}
+
+.iridophores-image-description-container p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.iridophores-explained-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.conclusion {
+    background-color: black;
+
+    padding: 50px 100px;
+}
+
+.conclusion-content h1 {
+    margin-bottom: 20px;
+
+    color: white;
+    font-size: 2.5em;
+}
+
+.conclusion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conclusion-text {
+    border: solid 3px white;
+
+    padding: 20px;
+
+    max-width: 600px;
+
+    text-align: center;
+} 
+
+.row1, .row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 25px 0;
+
+    width: 100%;
+}
+
+.cham-image-container {
+    height: 200px;
+    width: 200px;
+}
+
+.cham-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cham-image-hover {
+    background-color: white;
+
+    border-radius: 30px;
+    opacity: 0.85;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 10px;
+
+    height: 200px;
+    width: 200px;
+}
+
+.cham-emotion-title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cham-emotion-description {
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
