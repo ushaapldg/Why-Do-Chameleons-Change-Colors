@@ -365,6 +365,11 @@ p {
     text-align: center;
 } 
 
+.conslusion-hover-statement {
+    font-weight: bold;
+    font-style: italic;
+}
+
 .row1, .row3 {
     display: flex;
     justify-content: space-between;

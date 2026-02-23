@@ -138,6 +138,8 @@ colors.forEach((color) => {
                     <p>
                         Chameleons also alter their muscle tension actively, usually to help with thermoregulation. As cold-blooded creatures, chameleons are unable to generate heat on their own and depend on external sources of heat to maintain their temperature. When a chameleon is cooler than its optimal temperature, it can actively disperse pigment in the melanophores to turn black, allowing it to absorb heat. 
                     </p>
+                    <br>
+                    <p class="conslusion-hover-statement">Hover over a chameleon to see what it's colors mean!</p>
                 </div>`;
     } else if (colorsIndex === 6) {
         rowTwoHTML += 
